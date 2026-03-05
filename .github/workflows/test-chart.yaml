@@ -204,6 +204,7 @@ jobs:
             # https://artifacthub.io/packages/helm/bitnami/postgresql
             setup-postgresql-args: >-
               --version=16.0.5
+              --set image.repository=bitnamilegacy/postgresql
               --set auth.enablePostgresUser=true
               --set auth.postgresPassword=postgres
               --set auth.database=jupyterhub
