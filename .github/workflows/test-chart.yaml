@@ -246,7 +246,7 @@ jobs:
       - name: Install Argo Rollouts
         run: |
           kubectl create namespace argo-rollouts
-          kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
+          kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/download/v1.9.2/install.yaml
 
       # Build our images if needed and update values.yaml with the tags
       - name: Install and run chartpress
